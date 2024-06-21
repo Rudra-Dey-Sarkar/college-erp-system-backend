@@ -5,7 +5,8 @@ const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
 //MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/ardent',
+const dbURI = 'mongodb+srv://rudradeysarkar2002:Rudra9595@college-erp-system.2y8uzyb.mongodb.net/College-ERP-System?retryWrites=true&w=majority';
+mongoose.connect(dbURI,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
